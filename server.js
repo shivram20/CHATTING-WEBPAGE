@@ -10,6 +10,7 @@ http.listen(PORT,() =>{
 
 app.use(express.static(__dirname + '/public'))
 
+// home
 app.post("/",(req,res) =>{
   res.sendFile(__dirname + '/index.html')
 })
