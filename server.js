@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'))
 
 // home
 app.post("/",(req,res) =>{
-  res.sendFile(__dirname + '/index.html')
+  res.sendFile(__dirname + 'index.html')
 })
 
 const io = require('socket.io')(http)
