@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 const http =require("http").createServer(app)
-const PORT = 2005
+const PORT = process.env.PORT || 8000
 
 http.listen(PORT,() =>{
   console.log(`listen at Port ${PORT}`)
