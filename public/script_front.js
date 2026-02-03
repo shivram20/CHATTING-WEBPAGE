@@ -1,7 +1,8 @@
-const socket = io("https://your-render-app.onrender.com", {
-  transports: ["websocket"],
-});
+// const socket = io("https://your-render-app.onrender.com", {
+//   transports: ["websocket"],
+// });
 
+let socket = io();
 let name;
 let textarea = document.querySelector("#textarea")
 let messagearea = document.querySelector("#message_area")
